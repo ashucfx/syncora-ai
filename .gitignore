@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+.next/
+dist/
+.turbo/
+out/
+
+# Environment
+.env
+.env.local
+.env.production
+.env.staging
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Database
+*.sqlite
+*.db
+
+# Drizzle
+migrations/*.sql  # Don't gitignore — migrations ARE source code
+!migrations/
+
+# Coverage
+coverage/
+.nyc_output/
