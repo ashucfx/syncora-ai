@@ -1,0 +1,28 @@
+{
+  "name": "@syncora/ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./gateway": "./src/gateway.ts",
+    "./memory": "./src/memory/index.ts",
+    "./prompts": "./src/prompts/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^1.1.5",
+    "@ai-sdk/openai": "^1.0.14",
+    "ai": "^4.1.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@syncora/config": "workspace:*",
+    "@syncora/db": "workspace:*",
+    "@types/node": "^22.10.1",
+    "typescript": "^5.6.3"
+  }
+}
