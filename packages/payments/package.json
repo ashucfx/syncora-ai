@@ -1,0 +1,26 @@
+{
+  "name": "@syncora/payments",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./gateway": "./src/gateway.ts",
+    "./providers/stripe": "./src/providers/stripe.adapter.ts",
+    "./providers/razorpay": "./src/providers/razorpay.adapter.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "stripe": "^17.4.0",
+    "razorpay": "^2.9.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@syncora/config": "workspace:*",
+    "@types/node": "^22.10.1",
+    "typescript": "^5.6.3"
+  }
+}
