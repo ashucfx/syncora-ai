@@ -1,0 +1,31 @@
+{
+  "name": "@syncora/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./trpc": "./src/trpc.ts",
+    "./root": "./src/root.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@syncora/db": "workspace:*",
+    "@syncora/queue": "workspace:*",
+    "@syncora/payments": "workspace:*",
+    "@trpc/server": "^11.0.0",
+    "@supabase/supabase-js": "^2.46.2",
+    "@supabase/ssr": "^0.5.2",
+    "drizzle-orm": "^0.36.4",
+    "superjson": "^2.2.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@syncora/config": "workspace:*",
+    "@types/node": "^22.10.1",
+    "typescript": "^5.6.3"
+  }
+}
